@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Ismaya Pika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-glow"></div>
+
+<header class="site-header">
+    <nav class="navbar container">
+        <a class="brand" href="home.html">
+            <span class="brand-mark">P.</span>
+            <span>Ismaya Pika<span class="brand-dot">.</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a class="nav-link" href="home.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="education.html">Education</a></li>
+            <li><a class="nav-link" href="skills.html">Skills</a></li>
+            <li><a class="nav-link" href="projects.html">Projects</a></li>
+            <li><a class="nav-link nav-contact active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+                <!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+
+    <div class="section-heading reveal">
+      <span class="eyebrow">LET'S CONNECT</span>
+      <h2>Get in <span>touch!</span></h2>
+      <p>Terima kasih sudah mengunjungi website saya.
+         Silakan hubungi saya melalui informasi kontak berikut.
+        </p>
+      <p>Punya pertanyaan, ide, atau ingin bekerja sama? Kirim pesan melalui formulir berikut.</p>
+    </div>
+
+    <div class="contact-wrapper reveal">
+
+      <div class="contact-info">
+        <span class="contact-label">SAY HELLO ✨</span>
+        <h3>Let's make something great together.</h3>
+        <p>
+          Saya terbuka untuk berdiskusi, berbagi ide, dan menjalin koneksi baru.
+          Jangan ragu untuk menghubungi saya!
+        </p>
+
+        <div class="contact-socials">
+          <a href="https://www.instagram.com/_ismayafika?utm_source=qr"
+             target="_blank" rel="noopener noreferrer" class="social-link">
+            Instagram ↗
+          </a>
+
+          <a href="#contactForm" class="social-link">
+                Send an Email ↗
+            </a>
+        </div>
+      </div>
+<form class="contact-form" id="contactForm">
+
+  <div class="form-group">
+    <label for="nama">Nama Lengkap</label>
+    <input
+      type="text"
+      id="nama"
+      name="name"
+      placeholder="Masukkan nama kamu"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="nama@email.com"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="subjek">Subjek</label>
+    <input
+      type="text"
+      id="subjek"
+      name="subject"
+      placeholder="Apa yang ingin dibicarakan?"
+      required
+    >
+  </div>
+
+  <div class="form-group">
+    <label for="pesan">Pesan / Catatan</label>
+    <textarea
+      id="pesan"
+      name="message"
+      rows="5"
+      placeholder="Tuliskan pesan kamu di sini..."
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="button button-primary" id="sendButton">
+    Kirim Pesan <span>↗</span>
+  </button>
+
+  <p id="formStatus" aria-live="polite"></p>
+
+</form>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="brand footer-brand" href="home.html">
+            <span class="brand-mark">P.</span>
+            <span>Ismaya Pika.</span>
+        </a>
+
+       <p>Designed with care · <span id="year"></span> Ismaya Pika</p>
+
+        <a href="home.html" class="back-top">Back to top ↑</a>
+    </div>
+</footer>
+
+<!-- EMAILJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- SCRIPT WEBSITE -->
+<script src="script.js"></script>
+</body>
+</html>
